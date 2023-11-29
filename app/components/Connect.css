@@ -1,0 +1,25 @@
+@keyframes borderAnimation {
+    0% {
+      border-bottom-color: transparent;
+      border-left-color: transparent;
+      border-right-color: transparent;
+      border-top-color: transparent;
+    }
+    25% {
+      border-bottom-color: blue;
+    }
+    50% {
+      border-left-color: blue;
+    }
+    75% {
+      border-top-color: blue;
+    }
+    100% {
+      border-right-color: blue;
+    }
+  }
+  
+  .hover\:border-animation:hover {
+    animation: borderAnimation 1s linear infinite;
+  }
+  
