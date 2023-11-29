@@ -3,7 +3,7 @@ import "./Connect.css"; // Make sure to import the CSS file
 
 const Connect = () => {
   return (
-    <section className="flex justify-around items-center bg-white ">
+    <section className="flex justify-around items-center bg-[#F3F0EF] ">
       <div>
         <h1 className="text-4xl font-bold text-center p-8">Contact me</h1>
         <div className="flex lg:flex-row md:flex-col flex-col  lg:w-full md:w-full sm:flex-col w-full sm:w-full   justify-center items-center py-8">

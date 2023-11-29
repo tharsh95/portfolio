@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Fragment } from "react";
 import Card from "../basic/Card";
 import { DiHtml5 } from "react-icons/di";
 
@@ -45,8 +45,8 @@ const Skills = () => {
     },
   ];
   return (
-    <>
-      <h1 className="text-4xl font-bold text-center mt-4">My Skills</h1>
+    <div className="bg-[#F3F0EF] py-6">
+      <h1 className="text-4xl font-bold text-center">My Skills</h1>
       <section className=" flex lg:flex-row justify-center items-center  md:flex-col  flex-col sm:flex-col">
         {skills.map((skill) => (
           <div key={skill.id} className="flex flex-row">
@@ -60,7 +60,7 @@ const Skills = () => {
         ))}
       </section>
        
-    </>
+    </div>
   );
 };
 
