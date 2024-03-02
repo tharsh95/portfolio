@@ -48,7 +48,7 @@ const Project = () => {
       name: "Weather App",
       url: "https://stupefied-wilson-c2ab53.netlify.app/",
 
-      image: "/images/Weather.png",
+      image: "/images/weather.png",
       alt: "sw",
       description:
         "Our streamlined weather app provides instant access to the current temperature, ensuring you're always in the know. With a clean and simple interface, easily check the current temperature wherever you are. Stay informed without any clutter, just the temperature you need at a glance. Click now for quick and easy weather updates on the go.",
