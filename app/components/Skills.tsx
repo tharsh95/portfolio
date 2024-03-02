@@ -42,14 +42,14 @@ const Skills = () => {
       title: "Tools",
       src: "/images/tool.png",
       skills: ["Git", "Github", "VSCode", "Netlify", "Postman"],
-    },
+    }
   ];
   return (
     <div className="bg-[#F3F0EF] py-6">
       <h1 className="text-4xl font-bold text-center">My Skills</h1>
-      <section className=" flex lg:flex-row justify-center items-center  md:flex-col  flex-col sm:flex-col">
+      <section className=" flex lg:flex-row justify-center items-center flex-wrap  md:flex-col  flex-col sm:flex-col">
         {skills.map((skill) => (
-          <div key={skill.id} className="flex flex-row">
+          <div key={skill.id} className="flex flex-row ">
             <Card
               key={skill.id}
               title={skill.title}

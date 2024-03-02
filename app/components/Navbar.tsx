@@ -26,12 +26,12 @@ const Navbar = () => {
             <a href="#" onClick={()=>scrollToSection('skills')}>Skills</a>
           </li>
           <li className="text-white mr-6 text-xl font-semibold">
-            <a href="#" onClick={() => scrollToSection("project")}>
-              Projects
+            <a href="#" onClick={() => scrollToSection("about")}>
+              About Me
             </a>
           </li>
           <li className="text-white mr-6 text-xl font-semibold">
-            <a href="#" onClick={()=>scrollToSection('about')}>About Me</a>
+            <a href="#" onClick={()=>scrollToSection('project')}>Projects</a>
           </li>
           <li className="text-white mr-6 text-xl font-semibold">
             <a href="#" onClick={() => scrollToSection("connect")}>
