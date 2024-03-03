@@ -13,7 +13,7 @@ const ProjectCard = ({
   url,
 }: any) => {
   return (
-    <div className="flex-none lg:w-1/3 md:w-screen  w-screen sm:w-screen lg:h-[84vh]  bg-white shadow-md m-4 p-4 rounded-lg">
+    <div className="flex-none lg:w-1/3 md:w-screen  w-screen sm:w-full lg:h-[84vh]  bg-white shadow-md sm:m-4 sm:p-4 rounded-lg">
       <h2 className="text-2xl font-semibold">{name}</h2>
       <Link href={url} target="_blank">
         <Image src={image} alt={alt} width={1200} height={1200} />
