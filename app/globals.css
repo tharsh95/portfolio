@@ -6,3 +6,7 @@
   font-family: 'Roboto Slab', serif;
   background-color: red;
 } */
+#projectSection>div {
+  overflow-y: hidden; 
+padding:25px;
+}

@@ -66,24 +66,26 @@ const Project = () => {
     },
   ];
   return (
-    <section className=" bg-[#111827] flex  justify-center items-center ">
-          <div className="lg:flex overflow-y-auto  ">
-            {projects.map((card, index) => (
-              <ProjectCard
-                key={index}
-                url={card.url}
-                name={card.name}
-                description={card.description}
-                tech={card.tech}
-                image={card.image}
-                email={card.email}
-                password={card.password}
-                alt={card.alt}
-              />
-            ))}
-          </div>
+    <section
+      id="projectSection"
+      className=" bg-[#111827] flex justify-center items-center p-4 "
+    >
+      <div className="lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col overflow-x-auto ">
+        {projects.map((card, index) => (
+          <ProjectCard
+            key={index}
+            url={card.url}
+            name={card.name}
+            description={card.description}
+            tech={card.tech}
+            image={card.image}
+            email={card.email}
+            password={card.password}
+            alt={card.alt}
+          />
+        ))}
+      </div>
     </section>
-  
   );
 };
 export default Project;
