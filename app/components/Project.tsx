@@ -61,13 +61,13 @@ const Project = () => {
       image: "/images/Project.png",
       alt: "pm",
       description:
-        "The project management application features distinct user roles: Manager, Dev (Developer), and Tester. Managers possess comprehensive control, including task creation, user management, and task deletion with a soft delete option. Devs and Testers can create and edit tasks but lack managerial functions. All users access a personal profile for task management and password changes. User authentication is secure, and the interface is designed for ease of use. An audit trail ensures accountability, currently tracking task deletions by managers(Not deployed yet,Learning AWS.",
+        "The project management application features distinct user roles: Manager, Dev (Developer), and Tester. Managers possess comprehensive control, including task creation, user management, and task deletion with a soft delete option. Devs and Testers can create and edit tasks but lack managerial functions. All users access a personal profile for task management and password changes. User authentication is secure, and the interface is designed for ease of use. An audit trail ensures accountability, currently tracking task deletions by managers(Not deployed yet,Learning AWS).",
       tech: ["React.js,Nest.js,MySQL,MaterialUI"],
     },
   ];
   return (
-    <section className="h-[100vh] bg-[#111827] flex justify-center items-center ">
-          <div className="flex overflow-x-auto p-4 ">
+    <section className=" bg-[#111827] flex  justify-center items-center ">
+          <div className="flex lg:flex-row md:flex-col sm:flex-col  overflow-x-auto p-4 ">
             {projects.map((card, index) => (
               <ProjectCard
                 key={index}
@@ -83,6 +83,7 @@ const Project = () => {
             ))}
           </div>
     </section>
+  
   );
 };
 export default Project;
