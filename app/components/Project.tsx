@@ -67,7 +67,7 @@ const Project = () => {
   ];
   return (
     <section className=" bg-[#111827] flex  justify-center items-center ">
-          <div className="lg:flex overflow-x-auto  ">
+          <div className="lg:flex overflow-y-auto  ">
             {projects.map((card, index) => (
               <ProjectCard
                 key={index}
