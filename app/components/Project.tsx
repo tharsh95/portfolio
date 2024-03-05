@@ -15,7 +15,7 @@ const Project = () => {
       password: "Wxyz-1234",
     },
     {
-      name: "Pricewise(WIP)",
+      name: "Pricewise",
       url: "https://pricewise-lovat.vercel.app/",
       image: "/images/pricewise.png",
       alt: "pricewise",
