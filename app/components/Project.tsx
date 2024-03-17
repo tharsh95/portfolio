@@ -5,6 +5,7 @@ const Project = () => {
   const projects = [
     {
       name: "Tasky(WIP)",
+      git:"https://github.com/tharsh95/nextjs-tm",
       image: "/images/Tasky.png",
       alt: "tasky",
       url: "https://nextjs-tm-sepia.vercel.app/",
@@ -15,18 +16,19 @@ const Project = () => {
       password: "Wxyz-1234",
     },
     {
-    name: "Swiggato",
+      name: "Swiggato",
       url: "https://swiggato-swart.vercel.app//",
-
+      git:"https://github.com/tharsh95/HarshTiwari-FrontendDeveloper",
       image: "/images/swiggato.png",
       alt: "sw",
       description:
-        "The project management application features distinct user roles: Manager, Dev (Developer), and Tester. Managers possess comprehensive control, including task creation, user management, and task deletion with a soft delete option. Devs and Testers can create and edit tasks but lack managerial functions. All users access a personal profile for task management and password changes. User authentication is secure, and the interface is designed for ease of use. An audit trail ensures accountability, currently tracking task deletions by managers(Not deployed yet,Learning AWS).",
+        "Swiggato is a revolutionary culinary exploration platform that brings the world's cuisines to your fingertips. With an intuitive interface, users can effortlessly filter and sort through a vast array of dishes from different countries, curated to perfection. Each dish is presented on visually appealing cards, complete with ratings, ingredients, and step-by-step instructions. Dive deeper into your culinary journey by clicking on a card to reveal immersive modal windows featuring tantalizing images and video tutorials. With customizable pagination options, Swiggato ensures seamless navigation, allowing users to tailor their culinary adventures to their preferences. Whether you're a seasoned chef or a novice cook, Swiggato is your ultimate companion for discovering and mastering global flavors.",
       tech: ["React.js,Tailwindcss,,API Integration"],
     },
     {
       name: "Pricewise",
       url: "https://pricewise-lovat.vercel.app/",
+      git:"https://github.com/tharsh95/pricewise",
       image: "/images/pricewise.png",
       alt: "pricewise",
       description:
@@ -38,6 +40,7 @@ const Project = () => {
     {
       name: "IMDB",
       url: "https://656c6b994c31017383a811bb--gregarious-cactus-93797e.netlify.app/",
+      git:"https://github.com/tharsh95/react--movieimdb",
       image: "/images/imdb.png",
       alt: "imdb",
       description:
@@ -47,7 +50,7 @@ const Project = () => {
     {
       name: "Quizup",
       url: "https://jolly-galileo-e5276b.netlify.app/#/",
-
+      git:"https://github.com/tharsh95/quizup",
       image: "/images/quizup.png",
       alt: "quizup",
       description:
@@ -57,7 +60,7 @@ const Project = () => {
     {
       name: "Weather App",
       url: "https://stupefied-wilson-c2ab53.netlify.app/",
-
+      git:"https://github.com/tharsh95/weather",
       image: "/images/weather.png",
       alt: "sw",
       description:
@@ -67,7 +70,7 @@ const Project = () => {
     {
       name: "Project Management App",
       url: "https://www.loom.com/share/b06dca9483ab48089773a0b833da5138/",
-
+      git:"https://docs.google.com/document/d/1cYnCA7ol5HG6m7U4mqMCL61NTvvJgBAD29lk7KwtgcQ/edit",
       image: "/images/Project.png",
       alt: "pm",
       description:
@@ -91,6 +94,7 @@ const Project = () => {
             image={card.image}
             email={card.email}
             password={card.password}
+            git={card.git}
             alt={card.alt}
           />
         ))}

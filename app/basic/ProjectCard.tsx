@@ -11,10 +11,17 @@ const ProjectCard = ({
   email,
   password,
   url,
+  git
 }: any) => {
   return (
     <div className="overflow-y-auto flex-none lg:w-1/3 md:w-screen  w-screen sm:w-full lg:h-[84vh]  bg-white shadow-md lg:m-4 md:m-4 sm:m-4 m-4 sm:p-4 rounded-lg">
-      <h2 className="text-2xl font-semibold">{name}</h2>
+      <div className="flex">
+        <h2 className="text-2xl mr-2 font-semibold">{name}</h2>
+        <Link href={git} target="_blank">
+          <Image src={"/images/link.png"} alt="link" width={30} height={30}/>
+        </Link>
+      </div>
+
       <Link href={url} target="_blank">
         <Image src={image} alt={alt} width={1200} height={1200} />
       </Link>
