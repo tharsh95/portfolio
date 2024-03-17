@@ -22,7 +22,7 @@ const Project = () => {
       alt: "sw",
       description:
         "The project management application features distinct user roles: Manager, Dev (Developer), and Tester. Managers possess comprehensive control, including task creation, user management, and task deletion with a soft delete option. Devs and Testers can create and edit tasks but lack managerial functions. All users access a personal profile for task management and password changes. User authentication is secure, and the interface is designed for ease of use. An audit trail ensures accountability, currently tracking task deletions by managers(Not deployed yet,Learning AWS).",
-      tech: ["React.js,Tailwindcss,ContextAPI,API Integration"],
+      tech: ["React.js,Tailwindcss,,API Integration"],
     },
     {
       name: "Pricewise",
