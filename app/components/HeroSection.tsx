@@ -89,7 +89,7 @@ Experienced MERN stack developer proficient in Next.js and Nest.js, hailing from
             <Link href={"/Pdf"} target="_blank">
               <Button
                 borderRadius="1.75rem"
-                className="bg-white dark:bg-black text-black dark:text-white border-white dark:border-slate-800"
+                className="bg-black text-white  dark:border-slate-800"
               >
                 Download CV
               </Button>
