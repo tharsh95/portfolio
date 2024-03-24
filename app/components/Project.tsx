@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectCard from "../basic/ProjectCard";
-import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import Image from "next/image";
 import Link from "next/link";
