@@ -11,49 +11,49 @@ export const mapTextToIcons = (str) => {
     case "HTML5":
       return (
         <>
-          <DiHtml5 className="mr-2" />
+          <DiHtml5 className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "CSS3":
       return (
         <>
-          <DiCss3 className="mr-2" />
+          <DiCss3 className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "Javascript":
       return (
         <>
-          <DiJavascript1 className="mr-2" />
+          <DiJavascript1 className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "CSS3":
       return (
         <>
-          <DiCss3 className="mr-2" />
+          <DiCss3 className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "CSS3":
       return (
         <>
-          <DiCss3 className="mr-2" />
+          <DiCss3 className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "ReactJS":
       return (
         <>
-          <DiReact className="mr-2" />
+          <DiReact className="mr-1" />
           <span>{str}</span>
         </>
       );
     case "Bootstrap":
       return (
         <>
-          <DiBootstrap className="mr-2" />
+          <DiBootstrap className="mr-1" />
           <span>{str}</span>
         </>
       );
@@ -65,7 +65,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -79,7 +79,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -93,7 +93,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -107,7 +107,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -121,7 +121,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -135,7 +135,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -149,7 +149,7 @@ export const mapTextToIcons = (str) => {
             alt="TS"
             width={20}
             height={20}
-            className="mr-2"
+            className="mr-1"
           />
 
           <span>{str}</span>
@@ -158,84 +158,84 @@ export const mapTextToIcons = (str) => {
     case "Sequelize":
       return (
         <>
-           <Image src="/images/sequelize.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/sequelize.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "JWT":
       return (
         <>
-           <Image src="/images/jwt.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/jwt.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "LoopBack":
       return (
         <>
-           <Image src="/images/loopback.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/loopback.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Mongoose":
       return (
         <>
-           <Image src="/images/mongoose.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/mongoose.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "NestJS":
       return (
         <>
-           <Image src="/images/nest.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/nest.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Netlify":
       return (
         <>
-           <Image src="/images/netlify.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/netlify.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Postman":
       return (
         <>
-           <Image src="/images/postman.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/postman.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Git":
       return (
         <>
-           <Image src="/images/git.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/git.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Material UI":
       return (
         <>
-           <Image src="/images/material.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/material.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "Github":
       return (
         <>
-           <Image src="/images/github.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/github.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "VSCode":
       return (
         <>
-           <Image src="/images/vscode.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/vscode.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );
     case "MongoDB":
       return (
         <>
-           <Image src="/images/mongo.svg" alt="TS" width={20} height={20} className="mr-2"/> 
+           <Image src="/images/mongo.svg" alt="TS" width={20} height={20} className="mr-1"/> 
           <span>{str}</span>
         </>
       );

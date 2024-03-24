@@ -1,11 +1,15 @@
 import React from "react";
 import ProjectCard from "../basic/ProjectCard";
+import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
+import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
+import Image from "next/image";
+import Link from "next/link";
 
 const Project = () => {
   const projects = [
     {
       name: "Tasky(WIP)",
-      git:"https://github.com/tharsh95/nextjs-tm",
+      git: "https://github.com/tharsh95/nextjs-tm",
       image: "/images/Tasky.png",
       alt: "tasky",
       url: "https://nextjs-tm-sepia.vercel.app/",
@@ -18,7 +22,7 @@ const Project = () => {
     {
       name: "Swiggato",
       url: "https://swiggato-swart.vercel.app//",
-      git:"https://github.com/tharsh95/HarshTiwari-FrontendDeveloper",
+      git: "https://github.com/tharsh95/HarshTiwari-FrontendDeveloper",
       image: "/images/swiggato.png",
       alt: "sw",
       description:
@@ -28,7 +32,7 @@ const Project = () => {
     {
       name: "Pricewise",
       url: "https://pricewise-lovat.vercel.app/",
-      git:"https://github.com/tharsh95/pricewise",
+      git: "https://github.com/tharsh95/pricewise",
       image: "/images/pricewise.png",
       alt: "pricewise",
       description:
@@ -40,7 +44,7 @@ const Project = () => {
     {
       name: "IMDB",
       url: "https://656c6b994c31017383a811bb--gregarious-cactus-93797e.netlify.app/",
-      git:"https://github.com/tharsh95/react--movieimdb",
+      git: "https://github.com/tharsh95/react--movieimdb",
       image: "/images/imdb.png",
       alt: "imdb",
       description:
@@ -50,7 +54,7 @@ const Project = () => {
     {
       name: "Quizup",
       url: "https://jolly-galileo-e5276b.netlify.app/#/",
-      git:"https://github.com/tharsh95/quizup",
+      git: "https://github.com/tharsh95/quizup",
       image: "/images/quizup.png",
       alt: "quizup",
       description:
@@ -60,7 +64,7 @@ const Project = () => {
     {
       name: "Weather App",
       url: "https://stupefied-wilson-c2ab53.netlify.app/",
-      git:"https://github.com/tharsh95/weather",
+      git: "https://github.com/tharsh95/weather",
       image: "/images/weather.png",
       alt: "sw",
       description:
@@ -70,7 +74,7 @@ const Project = () => {
     {
       name: "Project Management App",
       url: "https://www.loom.com/share/b06dca9483ab48089773a0b833da5138/",
-      git:"https://docs.google.com/document/d/1cYnCA7ol5HG6m7U4mqMCL61NTvvJgBAD29lk7KwtgcQ/edit",
+      git: "https://docs.google.com/document/d/1cYnCA7ol5HG6m7U4mqMCL61NTvvJgBAD29lk7KwtgcQ/edit",
       image: "/images/Project.png",
       alt: "pm",
       description:
@@ -81,23 +85,132 @@ const Project = () => {
   return (
     <section
       id="projectSection"
-      className=" bg-[#111827] flex justify-center items-center p-4 "
+      className=" bg-black flex justify-center items-center p-4 "
     >
-      <div className="lg:flex lg:flex-row md:flex md:flex-col sm:flex sm:flex-col  overflow-x-auto ">
-        {projects.map((card, index) => (
+      {" "}
+      <div className="h-[60rem] w-full bg-black    bg-grid-white/[0.2] relative flex items-center justify-center">
+        {/* Radial gradient for the container to give a faded look */}
+        {/* <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+        <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
+        </p> */}
+        <div className="flex flex-row   overflow-x-auto ">
+          {/* {projects.map((card, index) => (
           <ProjectCard
-            key={index}
-            url={card.url}
-            name={card.name}
-            description={card.description}
-            tech={card.tech}
-            image={card.image}
-            email={card.email}
-            password={card.password}
-            git={card.git}
-            alt={card.alt}
+          key={index}
+          url={card.url}
+          name={card.name}
+          description={card.description}
+          tech={card.tech}
+          image={card.image}
+          email={card.email}
+          password={card.password}
+          git={card.git}
+          alt={card.alt}
           />
-        ))}
+          ))} */}
+          {projects.map((el) => (
+            <CardContainer key={el.git} className="inter-var">
+              <CardBody className=" bg-black relative hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
+                <div className="flex justify-between items-center mt-20">
+                  <CardItem
+                    translateZ="50"
+                    className="text-xl font-bold text-neutral-100 dark:text-white"
+                  >
+                    {el.name}
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={el.git}
+                    target="__blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Git
+                    </CardItem>
+                  </CardItem>
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={el.url}
+                    target="__blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    <CardItem
+                      translateZ={20}
+                      as="button"
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      Live Link
+                    </CardItem>
+                  </CardItem>
+                </div>
+                <CardItem translateZ="100" className="w-full mt-4">
+                  <CardItem
+                    translateZ={20}
+                    as={Link}
+                    href={el.url}
+                    target="__blank"
+                    className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
+                  >
+                    <Image
+                      src={el.image}
+                      height="1000"
+                      width="1000"
+                      className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                      alt="thumbnail"
+                    />
+                  </CardItem>
+                </CardItem>
+                <CardItem
+                  as="p"
+                  translateZ="60"
+                  className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+                >
+                  {el.description}
+                </CardItem>
+                {el.tech.map((el) => (
+                  <CardItem
+                    key={el}
+                    as="p"
+                    translateZ="60"
+                    className="text-white font-semibold text-sm max-w-sm mt-2"
+                  >
+                    {el}
+                  </CardItem>
+                ))}
+                {el.email && (
+                  <div className="flex">
+                    <div className="flex items-center mt-2 ">
+                      <h1 className="text-white font-extrabold">Email:</h1>
+                      <CardItem
+                        as="p"
+                        translateZ="60"
+                        className="text-white font-semibold text-sm max-w-sm"
+                      >
+                        {el.email}
+                      </CardItem>
+                    </div>
+                    <div className="flex items-center mt-2 ">
+                      <h1 className="text-white font-extrabold">Password:</h1>
+                      <CardItem
+                        as="p"
+                        translateZ="60"
+                        className="text-white font-semibold text-sm max-w-sm"
+                      >
+                        {el.password}
+                      </CardItem>
+                    </div>
+                  </div>
+                )}
+              </CardBody>
+            </CardContainer>
+          ))}
+        </div>
       </div>
     </section>
   );
