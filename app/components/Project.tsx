@@ -19,7 +19,7 @@ const Project = () => {
       name: "Weather App",
       url: "https://weather-new-chi.vercel.app/",
       git: "https://github.com/tharsh95/weather-new",
-      image: "/images/Weather.png",
+      image: "/images/weather.png",
       alt: "sw",
       description:"The Weather Dashboard is a sleek, modern application that provides comprehensive weather information with an elegant glassmorphic interface. It displays current conditions including temperature, weather description, humidity, wind speed, and sunrise/sunset times for any searched city, while offering a 4-day forecast at a glance. Users can toggle between Celsius and Fahrenheit, access detailed hourly forecasts by clicking on any day card, and benefit from automatic 30-second data refreshes. The app remembers the last searched location, provides clear error notifications, and features a fully responsive design that works beautifully across all devices, combining practical functionality with sophisticated aesthetics.",
       tech: ["React.js,Openweather API Integration,Vercel"],
