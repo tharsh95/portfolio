@@ -189,7 +189,7 @@ const Project = () => {
                     {el}
                   </CardItem>
                 ))}
-                {el.email && (
+                {/* {el?.email && (
                   <div className="flex">
                     <div className="flex items-center mt-2 ">
                       <h1 className="text-white font-extrabold">Email:</h1>
@@ -212,7 +212,7 @@ const Project = () => {
                       </CardItem>
                     </div>
                   </div>
-                )}
+                )} */}
               </CardBody>
             </CardContainer>
           ))}
