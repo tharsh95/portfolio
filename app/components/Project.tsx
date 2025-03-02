@@ -7,16 +7,32 @@ import Link from "next/link";
 const Project = () => {
   const projects = [
     {
-      name: "Tasky(WIP)",
-      git: "https://github.com/tharsh95/nextjs-tm",
+      name: "Stocks App",
+      url: "https://stocks-fe-sw2j.vercel.app/",
+      git: "https://github.com/tharsh95/stocks_fe",
+      image: "/images/Stocks.png",
+      alt: "sw",
+      description:"The mini-website was developed using Next.js, TypeScript, and Redux to track real-time stock and cryptocurrency prices. The backend continuously polls live price data from an API, storing it in MongoDB, while the frontend retrieves and displays the latest 20 entries in a dynamically updating table. WebSockets facilitate seamless real-time updates, and Redux, along with Redux Persist, efficiently manages state, ensuring user selections are preserved in localStorage. A modal allows users to effortlessly switch between different stocks or cryptocurrencies, providing a smooth and responsive experience.",
+      tech: ["Next.js,Express.js,MongoDB,Redux,Redux Persist,WebSocket,TypeScript"],
+    },
+    {
+      name: "Weather App",
+      url: "https://weather-new-chi.vercel.app/",
+      git: "https://github.com/tharsh95/weather-new",
+      image: "/images/Weather.png",
+      alt: "sw",
+      description:"The Weather Dashboard is a sleek, modern application that provides comprehensive weather information with an elegant glassmorphic interface. It displays current conditions including temperature, weather description, humidity, wind speed, and sunrise/sunset times for any searched city, while offering a 4-day forecast at a glance. Users can toggle between Celsius and Fahrenheit, access detailed hourly forecasts by clicking on any day card, and benefit from automatic 30-second data refreshes. The app remembers the last searched location, provides clear error notifications, and features a fully responsive design that works beautifully across all devices, combining practical functionality with sophisticated aesthetics.",
+      tech: ["React.js,Openweather API Integration,Vercel"],
+    },
+    {
+      name: "Tasky",
+      git: "https://github.com/tharsh95/tm_client",
       image: "/images/Tasky.png",
       alt: "tasky",
-      url: "https://nextjs-tm-sepia.vercel.app/",
+      url: "https://tm-client-two.vercel.app/#/",
       description:
-        "This is a project management application that allows users to create tasks by providing a title, description, and optional link, and then assign them to specific individuals. Users can also designate a status for each task. Additionally, they have the ability to update and delete tasks as needed. Currently, the project is in its early stages of development. In the future, it will incorporate role-based access control, which will enable certain roles to have the authority to delete tasks",
-      tech: ["Nextjs,Postgres,TailwindCSS,Vercel"],
-      email: "xyz@gmail.com",
-      password: "Wxyz-1234",
+        "This modern React application provides a comprehensive solution for personal task management and team collaboration. Built with React, Redux Toolkit, and TypeScript, it features a drag-and-drop Kanban board that allows users to organize tasks across three status columns (Pending, In Progress, and Done). The application also includes a social feed component where team members can share updates with images and captions, fostering team communication. User authentication is implemented with a clean login interface and password recovery functionality. The UI is crafted with Tailwind CSS for a responsive, professional design that works across all devices, while Lucide React icons provide consistent visual elements throughout the application.",
+      tech: ["Reactjs,Mongodb,TailwindCSS,Redux Toolkit,Cloudinary,Vercel"],
     },
     {
       name: "Swiggato",
@@ -60,16 +76,7 @@ const Project = () => {
         " A Quiz application developed using React Router, seamlessly integrated with the Open Trivia Database API. The app offers a diverse range of categories and three levels of difficulty. Users can select their preferred category and difficulty level to access a curated set of questions. Leveraging the Open Trivia Database API ensures a comprehensive and reliable source of quiz content. With React Router facilitating smooth navigation, users can enjoy an interactive and engaging quiz experience tailored to their preferences.",
       tech: ["React.js,MaterialUI,Netlify"],
     },
-    {
-      name: "Weather App",
-      url: "https://stupefied-wilson-c2ab53.netlify.app/",
-      git: "https://github.com/tharsh95/weather",
-      image: "/images/weather.png",
-      alt: "sw",
-      description:
-        "Our streamlined weather app provides instant access to the current temperature, ensuring you're always in the know. With a clean and simple interface, easily check the current temperature wherever you are. Stay informed without any clutter, just the temperature you need at a glance. Click now for quick and easy weather updates on the go.",
-      tech: ["React.js,API Integration,Netlify"],
-    },
+   
     {
       name: "Project Management App",
       url: "https://www.loom.com/share/b06dca9483ab48089773a0b833da5138/",
