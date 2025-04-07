@@ -28,7 +28,7 @@ const Project = () => {
       description:
         "The application begins with a job listings page where users can browse roles fetched from a backend API. Upon selecting a job, the system uses the job description to generate two relevant coding questions using OpenAI. When a user chooses a question to solve, they are taken to the code editor screen. This screen displays the question description, sample inputs/outputs, and a Monaco-based JavaScript editor. Users can write and run code using the built-in compiler to test their solutions. After submission, the code is saved to the database and analyzed by an OpenAI LLM, which returns suggestions for improving the submitted code. This end-to-end flow offers a dynamic and intelligent coding environment tailored to job-specific challenges.",
       tech: [
-        "React.js,Express.js,MongoDB,OpenAI LLM,Code-compiler,TailwindCSS,DigitalOcean",
+        "React.js,Express.js,MongoDB,OpenAI LLM,Code-compiler,TailwindCSS,DigitalOcean,Vercel",
       ],
     },
     {
