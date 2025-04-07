@@ -7,59 +7,67 @@ import Link from "next/link";
 const Project = () => {
   const projects = [
     {
-      name: "Stocks App",
-      url: "https://stocks-fe-sw2j.vercel.app/",
-      git: "https://github.com/tharsh95/stocks_fe",
-      image: "/images/Stocks.png",
-      alt: "sw",
-      description:"The mini-website was developed using Next.js, TypeScript, and Redux to track real-time stock and cryptocurrency prices. The backend continuously polls live price data from an API, storing it in MongoDB, while the frontend retrieves and displays the latest 20 entries in a dynamically updating table. WebSockets facilitate seamless real-time updates, and Redux, along with Redux Persist, efficiently manages state, ensuring user selections are preserved in localStorage. A modal allows users to effortlessly switch between different stocks or cryptocurrencies, providing a smooth and responsive experience.",
-      tech: ["Next.js,Express.js,MongoDB,Redux,Redux Persist,WebSocket,TypeScript"],
-    },
-    {
-      name: "Weather App",
-      url: "https://weather-new-chi.vercel.app/",
-      git: "https://github.com/tharsh95/weather-new",
-      image: "/images/weather.png",
-      alt: "sw",
-      description:"The Weather Dashboard is a sleek, modern application that provides comprehensive weather information with an elegant glassmorphic interface. It displays current conditions including temperature, weather description, humidity, wind speed, and sunrise/sunset times for any searched city, while offering a 4-day forecast at a glance. Users can toggle between Celsius and Fahrenheit, access detailed hourly forecasts by clicking on any day card, and benefit from automatic 30-second data refreshes. The app remembers the last searched location, provides clear error notifications, and features a fully responsive design that works beautifully across all devices, combining practical functionality with sophisticated aesthetics.",
-      tech: ["React.js,Openweather API Integration,Vercel"],
-    },
-    {
-      name: "Tasky",
-      git: "https://github.com/tharsh95/tm_client",
+      name: "Task Management",
+      front_git: "https://github.com/tharsh95/tm_ai_fe",
+      back_git: "https://github.com/tharsh95/tm_ai_be",
       image: "/images/Tasky.png",
       alt: "tasky",
-      url: "https://tm-client-two.vercel.app/#/",
+      url: "https://tm-ai-fe.vercel.app/",
       description:
-        "This modern React application provides a comprehensive solution for personal task management and team collaboration. Built with React, Redux Toolkit, and TypeScript, it features a drag-and-drop Kanban board that allows users to organize tasks across three status columns (Pending, In Progress, and Done). The application also includes a social feed component where team members can share updates with images and captions, fostering team communication. User authentication is implemented with a clean login interface and password recovery functionality. The UI is crafted with Tailwind CSS for a responsive, professional design that works across all devices, while Lucide React icons provide consistent visual elements throughout the application.",
-      tech: ["Reactjs,Mongodb,TailwindCSS,Redux Toolkit,Cloudinary,Vercel"],
+        'This Task Management System features user registration and login, followed by a dynamic dashboard with columns for "To Do", "In Progress", "Completed", and "Frozen" tasks. New tasks are created in the "To Do" column by default, where users provide a title and short description. Using OpenAI LLM, the system auto-generates a detailed task description and assigns a priority level (Low, Medium, or High) based on the content. Tasks can be easily moved between columns by selecting the desired status. Users can also edit task details such as the due date and participants, or delete tasks as needed. The backend is built with FastAPI, and the frontend uses React.js for a seamless and responsive experience.',
+      tech: ["FastAPI,Mongodb,Reactjs,TailwindCSS,OpenAI LLM,Vercel,DigitalOcean"],
+      email: "john@example.com",
+      password: "123456",
     },
     {
-      name: "Swiggato",
-      url: "https://swiggato-swart.vercel.app//",
-      git: "https://github.com/tharsh95/HarshTiwari-FrontendDeveloper",
-      image: "/images/swiggato.png",
-      alt: "sw",
-      description:
-        "Swiggato is a revolutionary culinary exploration platform that brings the world's cuisines to your fingertips. With an intuitive interface, users can effortlessly filter and sort through a vast array of dishes from different countries, curated to perfection. Each dish is presented on visually appealing cards, complete with ratings, ingredients, and step-by-step instructions. Dive deeper into your culinary journey by clicking on a card to reveal immersive modal windows featuring tantalizing images and video tutorials. With customizable pagination options, Swiggato ensures seamless navigation, allowing users to tailor their culinary adventures to their preferences. Whether you're a seasoned chef or a novice cook, Swiggato is your ultimate companion for discovering and mastering global flavors.",
-      tech: ["React.js,Tailwindcss,,API Integration"],
-    },
-    {
-      name: "Pricewise",
-      url: "https://pricewise-lovat.vercel.app/",
-      git: "https://github.com/tharsh95/pricewise",
+      name: "Code Editor",
+      url: "https://code-editor-fe.tAvercel.app/",
+      front_git: "https://github.com/tharsh95/pricewise",
       image: "/images/pricewise.png",
       alt: "pricewise",
       description:
-        "Developed using Next.js and Bright Data's webunlocker, this e-commerce product scraping site is designed to assist users in making informed decisions. It notifies users when a product drops in price and helps competitors by alerting them when the product is out of stock, all managed through cron jobs.",
+        "The application begins with a job listings page where users can browse roles fetched from a backend API. Upon selecting a job, the system uses the job description to generate two relevant coding questions using OpenAI. When a user chooses a question to solve, they are taken to the code editor screen. This screen displays the question description, sample inputs/outputs, and a Monaco-based JavaScript editor. Users can write and run code using the built-in compiler to test their solutions. After submission, the code is saved to the database and analyzed by an OpenAI LLM, which returns suggestions for improving the submitted code. This end-to-end flow offers a dynamic and intelligent coding environment tailored to job-specific challenges.",
       tech: [
-        "Nextjs, Bright Data, Cheerio, Nodemailer, Mongodb, TailwindCSS, Vercel",
+        "React.js,Express.js,MongoDB,OpenAI LLM,Code-compiler,TailwindCSS,DigitalOcean",
       ],
+    },
+    {
+      name: "Workflow Management App",
+      url: "https://workflow-client-kappa.vercel.app/#/",
+      front_git:
+        "https://docs.google.com/document/d/1cYnCA7ol5HG6m7U4mqMCL61NTvvJgBAD29lk7KwtgcQ/edit",
+      image: "/images/Project.png",
+      alt: "pm",
+      description:
+        "The Workflow Management System offers a visual interface to create and manage linear workflows using React Flow. Each workflow begins with a Start node, followed by an API node where users can configure the HTTP method, URL, headers, and body for POST/PUT requests. An Email node is then added to specify the recipient who will receive the API response. Workflows must be saved before they can be executed, edited, or deleted, ensuring structured management. The platform includes secure authentication, role-based authorization, and a robust backend with database integration for reliable performance and data persistence.",
+      tech: ["React.js,Node.js,MongoDB,TailwindCSS,ReactFlow,DigitalOcean,OpenAI LLM"],
+      email: "john@example.com",
+      password: "123456",
+    },
+    {
+      name: "Weather App",
+      url: "https://stupefied-wilson-c2ab53.netlify.app/",
+      front_git: "https://github.com/tharsh95/weather",
+      image: "/images/weather.png",
+      alt: "sw",
+      description:
+        "Our streamlined weather app provides instant access to the current temperature, ensuring you're always in the know. With a clean and simple interface, easily check the current temperature wherever you are. Stay informed without any clutter, just the temperature you need at a glance. Click now for quick and easy weather updates on the go.",
+      tech: ["React.js,API Integration,Netlify"],
+    },
+    {
+      name: " Crypto Tracker",
+      url: "https://stocks-fe-gamma.vercel.app/",
+      front_git: "https://github.com/tharsh95/HarshTiwari-FrontendDeveloper",
+      image: "/images/swiggato.png",
+      alt: "sw",
+      description:
+        "The mini-website was developed using Next.js, Express.js, and Redux to track real-time cryptocurrency prices. The backend continuously polls live price data from an API, storing it in MongoDB, while the frontend retrieves and displays the latest 20 entries in a dynamically updating table. WebSockets facilitate seamless real-time updates, and Redux, along with Redux Persist, efficiently manages state, ensuring user selections are preserved in localStorage. A modal allows users to effortlessly switch between different stocks or cryptocurrencies, providing a smooth and responsive experience.",
+      tech: ["Next.js,Express.js,MongoDB,Redux,WebSockets,TypeScript"],
     },
     {
       name: "IMDB",
       url: "https://656c6b994c31017383a811bb--gregarious-cactus-93797e.netlify.app/",
-      git: "https://github.com/tharsh95/react--movieimdb",
+      front_git: "https://github.com/tharsh95/react--movieimdb",
       image: "/images/imdb.png",
       alt: "imdb",
       description:
@@ -69,23 +77,12 @@ const Project = () => {
     {
       name: "Quizup",
       url: "https://jolly-galileo-e5276b.netlify.app/#/",
-      git: "https://github.com/tharsh95/quizup",
+      front_git: "https://github.com/tharsh95/quizup",
       image: "/images/quizup.png",
       alt: "quizup",
       description:
         " A Quiz application developed using React Router, seamlessly integrated with the Open Trivia Database API. The app offers a diverse range of categories and three levels of difficulty. Users can select their preferred category and difficulty level to access a curated set of questions. Leveraging the Open Trivia Database API ensures a comprehensive and reliable source of quiz content. With React Router facilitating smooth navigation, users can enjoy an interactive and engaging quiz experience tailored to their preferences.",
       tech: ["React.js,MaterialUI,Netlify"],
-    },
-   
-    {
-      name: "Project Management App",
-      url: "https://www.loom.com/share/b06dca9483ab48089773a0b833da5138/",
-      git: "https://docs.google.com/document/d/1cYnCA7ol5HG6m7U4mqMCL61NTvvJgBAD29lk7KwtgcQ/edit",
-      image: "/images/Project.png",
-      alt: "pm",
-      description:
-        "The project management application features distinct user roles: Manager, Dev (Developer), and Tester. Managers possess comprehensive control, including task creation, user management, and task deletion with a soft delete option. Devs and Testers can create and edit tasks but lack managerial functions. All users access a personal profile for task management and password changes. User authentication is secure, and the interface is designed for ease of use. An audit trail ensures accountability, currently tracking task deletions by managers(Not deployed yet,Learning AWS).",
-      tech: ["React.js,Nest.js,MySQL,MaterialUI"],
     },
   ];
   return (
@@ -115,7 +112,7 @@ const Project = () => {
           />
           ))} */}
           {projects.map((el) => (
-            <CardContainer key={el.git} className="inter-var">
+            <CardContainer key={el.front_git} className="inter-var">
               <CardBody className=" bg-black relative hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  ">
                 <div className="flex justify-between items-center mt-20">
                   <CardItem
@@ -127,7 +124,7 @@ const Project = () => {
                   <CardItem
                     translateZ={20}
                     as={Link}
-                    href={el.git}
+                    href={el.front_git}
                     target="__blank"
                     className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
                   >
@@ -189,30 +186,31 @@ const Project = () => {
                     {el}
                   </CardItem>
                 ))}
-                {/* {el?.email && (
-                  <div className="flex">
-                    <div className="flex items-center mt-2 ">
-                      <h1 className="text-white font-extrabold">Email:</h1>
-                      <CardItem
-                        as="p"
-                        translateZ="60"
-                        className="text-white font-semibold text-sm max-w-sm"
-                      >
-                        {el.email}
-                      </CardItem>
+
+                  {el.email && (
+                    <div className="flex flex-col mt-4">
+                      <div className="flex items-center mt-2 ">
+                        <h1 className="text-white font-extrabold">Email:</h1>
+                        <CardItem
+                          as="p"
+                          translateZ="60"
+                          className="text-white font-semibold text-sm max-w-sm"
+                        >
+                          {el.email}
+                        </CardItem>
+                      </div>
+                      <div className="flex items-center mt-2 ">
+                        <h1 className="text-white font-extrabold">Password:</h1>
+                        <CardItem
+                          as="p"
+                          translateZ="60"
+                          className="text-white font-semibold text-sm max-w-sm"
+                        >
+                          {el.password}
+                        </CardItem>
+                      </div>
                     </div>
-                    <div className="flex items-center mt-2 ">
-                      <h1 className="text-white font-extrabold">Password:</h1>
-                      <CardItem
-                        as="p"
-                        translateZ="60"
-                        className="text-white font-semibold text-sm max-w-sm"
-                      >
-                        {el.password}
-                      </CardItem>
-                    </div>
-                  </div>
-                )} */}
+                  )}
               </CardBody>
             </CardContainer>
           ))}
