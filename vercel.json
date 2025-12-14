@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://dev-portfolio-cyeg.vercel.app/",
+      "permanent": true
+    }
+  ]
+}
