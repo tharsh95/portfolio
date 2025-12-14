@@ -81,11 +81,11 @@ const HeroSection = () => {
             I am Harsh
           </h1>
           <p className="mt-4 font-normal text-base md:text-lg text-neutral-300 max-w-lg mx-auto">
-            
-Experienced MERN stack developer proficient in Next.js and Nest.js, hailing from Bengaluru, India. Crafting seamless digital experiences to enhance your web presence. Dive into my portfolio and let&apos;s collaborate on your project!
+
+            Experienced MERN stack developer proficient in Next.js and Nest.js, hailing from Bengaluru, India. Crafting seamless digital experiences to enhance your web presence. Dive into my portfolio and let&apos;s collaborate on your project!
           </p>
           <div className="mt-4">
-      
+
             <Link href={"/Pdf"} target="_blank">
               <Button
                 borderRadius="1.75rem"

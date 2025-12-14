@@ -90,7 +90,7 @@ const Navbar = ({ className }: { className?: string }) => {
     <>
       <div
         className={cn(
-          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50",
+          "fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 flex items-center justify-center gap-4",
           className
         )}
       >
@@ -131,26 +131,33 @@ const Navbar = ({ className }: { className?: string }) => {
             ></MenuItem>
           </Link>
         </Menu>
+
+        <a
+          href="https://dev-portfolio-cyeg.vercel.app/"
+          className="absolute -right-40 top-2 hidden md:block rounded-full bg-red-600 px-6 py-2 text-sm font-bold text-white transition-transform hover:scale-105 hover:bg-red-700 shadow-lg"
+        >
+          New Portfolio
+        </a>
       </div>
-        <div id="hero">
-          <HeroSection />
-        </div>
-        <div id="about">
-          <About />
-        </div>
-        <div id="skills">
-          <Skills />
-        </div>
-        <div id="project">
-          <Project />
-        </div>
-        <div id="connect">
-          <Connect />
-        </div>
-        <div>
-          <Footer />
-        </div>
-        <BackgroundBeams />
+      <div id="hero">
+        <HeroSection />
+      </div>
+      <div id="about">
+        <About />
+      </div>
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="project">
+        <Project />
+      </div>
+      <div id="connect">
+        <Connect />
+      </div>
+      <div>
+        <Footer />
+      </div>
+      <BackgroundBeams />
     </>
   );
 };
